@@ -1,0 +1,11 @@
+//Import bootstrap-sprockets
+@import "bootstrap-sprockets";
+
+// Import flatly variables
+@import "bootswatch/flatly/variables";
+
+// Then bootstrap itself
+@import "bootstrap";
+
+// Bootstrap body padding for fixed navbar
+body { padding-top: 90px; }
