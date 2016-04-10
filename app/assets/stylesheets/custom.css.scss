@@ -9,3 +9,43 @@
 
 // Bootstrap body padding for fixed navbar
 body { padding-top: 90px; }
+
+.results-block {
+	display: inline-block;
+}
+
+.stock-lookup-search{
+	margin: 60px 0 30px 0;	
+}
+
+.footer a{
+	color: #18BC9C;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.left-padding {
+	padding-left: 15px !important;
+}
+
+.user-name {
+	padding-top: 15px;
+}
+
+.logout {
+	padding-left: 0;
+}
+
+.nav.navbar-right li {
+
+	.btn {
+		color: #fff !important;
+		margin-top: 5%;
+	}
+
+	.btn-danger:hover {
+		background-color: darken(#d9534f, 20%) !important;
+	}
+}
