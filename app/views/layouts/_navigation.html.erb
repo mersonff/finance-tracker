@@ -11,12 +11,14 @@
         <ul class="nav navbar-nav com-md-6">
           <li><%= link_to "My Portfolio", my_portfolio_path  %></li>
           <li><%= link_to "My Profile", edit_user_registration_path(current_user)  %></li>
-          <li><%= link_to "Link3", "/path3"  %></li>
+          <li><%= link_to "My Friends", my_friends_path  %></li>
         </ul>
         <ul class="nav navbar-right col-md-4">
           <li class="col-md-8 user-name text-right">
-            <i class="fa fa-user"></i>
-            <%= current_user.full_name.present? ? current_user.full_name : current_user.email %>
+            <%= link_to edit_user_registration_path(current_user), class: "navbar-link" do %>
+              <i class="fa fa-user"></i> 
+              <%= current_user.full_name.present? ? current_user.full_name : current_user.email %>
+            <% end %>
           </li>
           <li class="col-md-4 logout">
             <%= link_to("Logout", destroy_user_session_path, class: 'btn btn-xs btn-danger', method: :delete) %>
